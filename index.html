@@ -10,13 +10,16 @@
 </head>
 <body>
 <main>
+	<div>
+		<h2 class="center success-text">Muy pronto descubrir tu carrera será más facil. <span>Qeestudiar.com</span></h2>
+	</div>
 	<form id="form">
 		<p class="center title">¿Sabes que carrera quisieras estudiar?</p>
 		<div class="row center">
 			<div>
-				<input name="group1" type="radio" id="test1" value="1" />
+				<input name="group1" type="radio" id="test1" value="1" required/>
 				<label for="test1">SI</label>
-				<input name="group1" type="radio" id="test2" value="2" />
+				<input name="group1" type="radio" id="test2" value="2" required/>
 				<label for="test2">NO</label>
 			</div>
 			<div class="col s12 m4"></div>
@@ -28,16 +31,66 @@
 		</div>
 		<div class="row">
 			<p class="center title">¿Con que imágen de identificas mejor?</p>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
-			<div class="col s3"><img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg"></div>
+			<div class="col s3">
+				<input type="checkbox" id="office" value="office"/>
+				<label for="office">
+					<img class="responsive-img" src="images/building.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="building" value="building"/>
+				<label for="building">
+					<img class="responsive-img" src="images/building.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="hospital" value="hospital"/>
+				<label for="hospital">
+					<img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="tv" value="tv"/>
+				<label for="tv">
+					<img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="laboratory" value="laboratory"/>
+				<label for="laboratory">
+					<img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="technology" value="technology"/>
+				<label for="technology">
+					<img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="class_room" value="class_room"/>
+				<label for="class_room">
+					<img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="art" value="art"/>
+				<label for="art">
+					<img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="car" value="car"/>
+				<label for="car">
+					<img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg" />
+				</label>
+			</div>
+			<div class="col s3">
+				<input type="checkbox" id="nature" value="nature"/>
+				<label for="nature">
+					<img class="responsive-img" src="http://www.pachostereo.com/fm/images/24058-ingenieros-de-software-en-google-los-mejor-pagados-facebook-.jpg" />
+				</label>
+			</div>
 		</div>
 		<div class="row center">
 			<p class="center title">Cursos o talleres que te gustaron y en los que te fue bien</p>
@@ -60,7 +113,7 @@
 								<p>CONVERSAR CON ESTUDIANTES DE LA CARRERA QUE TE INTERESA.</p>
 							</a>
 							<div class="card-action">
-								<a href="#">Seleccionar</a>
+								<input type="number" value="" placeholder="1 al 3">
 							</div>
 						</div>
 					</div>
@@ -72,7 +125,7 @@
 								<p>UN BUSCADOR DONDE ENCONTRARÁS QUE UNIVERSIDADES TIENEN TU CARRERA</p>
 							</a>
 							<div class="card-action">
-								<a href="#">Seleccionar</a>
+								<input type="number" value="" placeholder="1 al 3">
 							</div>
 						</div>
 					</div>
@@ -84,7 +137,7 @@
 								<p>COMPARAR LOS BENEFICIOS QUE TE OFRECE DIFERENTES UNIVERSIDADES POR TU CARRERA</p>
 							</a>
 							<div class="card-action">
-								<a href="#">Seleccionar</a>
+								<input type="number" value="" placeholder="1 al 3">
 							</div>
 						</div>
 					</div>
@@ -98,16 +151,16 @@
 			<div class="col s6">
 				<p class="center title">Déjanos tus datos para ayudarte a elegir tu futuro!!</p>
 				<div class="input-field col s12">
-					<input id="email" placeholder="Mi correo es" type="text" class="validate">
-					<label for="disabled">Email</label>
+					<input id="email" placeholder="Mi correo es" type="text" class="validate" required>
+					<label>Email</label>
 				</div>
 				<div class="input-field col s12">
-					<input id="whatsapp" placeholder="Mi número de whatsapp es" type="text" class="validate">
-					<label for="disabled">Número de whatsapp</label>
+					<input id="whatsapp" placeholder="Mi número de whatsapp es" type="text" class="validate" required>
+					<label>Número de whatsapp</label>
 				</div>
 				<div class="input-field col s12">
 					<input id="nameUser" placeholder="Mi nombre es" type="text" class="validate">
-					<label for="disabled">TU nombre es</label>
+					<label>TU nombre es</label>
 				</div>
 			</div>
 			<div class="col s3"></div>
@@ -118,6 +171,7 @@
 		<br><br>
 	</form>
 </main>
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 <script src="js/main.js"></script>

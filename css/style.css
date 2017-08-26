@@ -1,3 +1,9 @@
 .title {
 	font-size: 25px;
 }
+.success-text{
+	display: none;
+}
+.success-text span{
+	color: blue;
+}
